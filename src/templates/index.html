@@ -5,52 +5,33 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IC Resto</title>
+    <meta name="description" content="Web application catalouge for IT Resto">
+    <meta name="theme-color" content="#FDF6EC" />
+    <link rel="icon" href="favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+    <title>IT Resto</title>
 </head>
 
 <body id="home">
+    <!-- skiplink -->
     <a href="#main-content" class="skip-link">Menuju ke konten</a>
 
     <!-- App Bar -->
-    <header class="header">
-        <a href="/">
-            <h1 class="nav_logo">IC Resto</h1>
-        </a>
-        <button class="menu" id="menu" aria-label="button menu dropdown on mobile">☰</button>
-        <nav id="drawer" class="nav">
-            <ul class="nav_list">
-                <li class="nav_item"><a href="index.html">Home</a></li>
-                <li class="nav_item"><a href="#">Favorite</a></li>
-                <li class="nav_item"><a href="https://github.com/ibnucholdun" target="_blank" rel="noopener">About
-                        Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    <app-bar></app-bar>
 
     <!-- Hero Element -->
-    <div class="hero">
-        <div tabindex="0" class="hero_inner">
-            <h1 class="hero_title">Selamat Datang Di <span class="hero_bold">IC Resto</span></h1>
-            <p class="hero_tagline">Kurus dan gendut adalah pilihan tapi makan enak adalah kebutuhan!</p>
-            <a href="#main-content" class="hero_button">Baca Selengkapnya...</a>
-        </div>
-    </div>
+    <hero-element></hero-element>
 
     <!-- Main Content -->
-    <main id="main-content" class="main-content__container">
-        <h2 tabindex="0" class="explore-restaurant__label">Explore Restaurant</h2>
-        <section id="explore-restaurant-list"></section>
-    </main>
+    <main tabindex="0" id="main-content" class="main-content__container"></main>
 
     <!-- Footer -->
-    <footer tabindex="0">
-        <ul>
-            <li><span>Copyright © 2022 - IC Resto</span></li>
-            <li><span>handcrafted with <i title="love" class="fa fa-heart"></i> by Ibnu Choldun</span></li>
-        </ul>
-    </footer>
+    <footer-custom></footer-custom>
 </body>
 
 </html>

@@ -1,45 +1,25 @@
 import 'regenerator-runtime'; /* for async await transpile */
+import './components/app-bar';
+import './components/hero';
+import './components/footer-custom';
 import '../styles/main.css';
 import '../styles/responsive.css';
-import DATA from '../data.json';
+import App from './views/app';
+import swRegister from './utils/sw-register';
 
 // toggle
-const menu = document.querySelector('#menu');
-const hero = document.querySelector('.hero');
-const main = document.querySelector('main');
-const drawer = document.querySelector('#drawer');
-menu.addEventListener('click', function (event) {
-    drawer.classList.toggle('open');
-    event.stopPropagation();
-});
-hero.addEventListener('click', function () {
-    drawer.classList.remove('open');
-});
-main.addEventListener('click', function () {
-    drawer.classList.remove('open');
+const app = new App({
+  button: document.querySelector('#menu'),
+  content: document.querySelector('main'),
+  drawer: document.querySelector('#drawer'),
+  hero: document.querySelector('.hero'),
 });
 
-// DOM manipulation explore restaurant list
-const getExploreRestaurant = (data) => {
-    data.restaurants.forEach(restaurant => {
-        const restaurantItem = document.getElementById('explore-restaurant-list');
-        restaurantItem.innerHTML += `
-        <article tabindex="0" class="card">
-            <div class="card-img-container">
-                <img class="card-image" alt="${restaurant.name}" src="${restaurant.pictureId}"/>
-                <span class="card-rating">
-                    <i title="ratings" class="fa fa-star"></i>
-                    <span>${restaurant.rating}</span>
-                </span>
-            </div>
+window.addEventListener('hashchange', () => {
+  app.renderPage();
+});
 
-            <div class="card-content">
-                <p class="card-content-title">${restaurant.name} - ${restaurant.city}</p>
-                <p class="card-content-title-description">Description: </p>
-                <p class="card-content-description">${restaurant.description}</p>
-            </div>
-        </article>
-        `;
-    })
-}
-getExploreRestaurant(DATA);
+window.addEventListener('load', () => {
+  app.renderPage();
+  swRegister();
+});

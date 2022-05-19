@@ -4,19 +4,18 @@
     --liner-gradient: linear-gradient(71.9deg, #354c6282 10.77%, #8633332b 92.46%)
 }
 
-* {
+*{
     box-sizing: border-box;
 }
 
-body,
-html {
+body,html{
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
 }
 
-body {
+body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     background: var(--primary-color);
@@ -24,7 +23,7 @@ body {
 }
 
 /* App bar */
-.header {
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,33 +40,31 @@ body {
     color: var(--primary-color);
     background-color: var(--secondary-color);
     text-decoration: none;
-    border: none;
+    border:none;
 }
 
-.nav_logo {
+.nav_logo{
     line-height: 24px;
     color: var(--primary-color);
     padding: 0.7rem;
     margin: 0;
 }
 
-.nav_item,
-a,
-ul {
+.nav_item, a, ul{
     text-decoration: none;
     list-style: none;
     color: var(--primary-color);
 }
 
-.nav_item {
+.nav_item{
     box-sizing: border-box;
     line-height: 24px;
     display: inline-block;
 }
 
-.nav_item a {
+.nav_item a{
     padding: 0.9rem;
-    font-size: 1.3em;
+    font-size: 1.37em;
 }
 
 .nav_list {
@@ -76,7 +73,7 @@ ul {
     margin: 0;
 }
 
-.nav a:hover {
+.nav a:hover{
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 10px;
@@ -95,7 +92,7 @@ ul {
     background-position: center;
 }
 
-.hero_inner {
+.hero_inner { 
     margin: 0 auto;
     max-width: 800px;
 }
@@ -107,7 +104,7 @@ ul {
     margin: 0;
 }
 
-.hero_bold {
+.hero_bold{
     font-weight: bold;
     color: var(--secondary-color);
     background-color: var(--primary-color);
@@ -123,7 +120,7 @@ ul {
     font-weight: 400;
 }
 
-.hero_button {
+.hero_button{
     margin-top: 16px;
     padding: 1em;
     border-radius: 10px;
@@ -138,16 +135,14 @@ ul {
 .main-content__container {
     width: 100%;
     margin: 60px auto;
-    padding: 0 5%;
+    padding: 0 3%;
     text-align: center;
 }
-
 .explore-restaurant__label {
     font-size: 32px;
     font-weight: lighter;
     text-align: center;
 }
-
 .explore-restaurant__label::after {
     content: '';
     margin-top: 16px;
@@ -167,7 +162,7 @@ ul {
     text-align: center;
     transition: 0.3s;
     background-color: var(--primary-color);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     border-radius: 1em;
 }
 
@@ -175,7 +170,6 @@ ul {
     box-shadow: 10px 10px 5px 0px var(--secondary-color);
 
 }
-
 .card-rating {
     position: absolute;
     top: 0;
@@ -186,7 +180,7 @@ ul {
     padding: 0.4em 1.3em;
     z-index: 1;
     border-radius: 0 1em;
-
+    
 }
 
 .card-rating .fa {
@@ -205,7 +199,7 @@ ul {
 
 .card-image {
     object-fit: cover;
-    height: 250px;
+    height: 100%;
     width: 100%;
     border-radius: 1em 1em 0 0;
 }
@@ -216,12 +210,14 @@ ul {
     text-align: center;
 }
 
-.card-content-title {
+.card-content-title a {
     font-weight: bold;
-    padding-bottom: 0.376em;
+    padding: 0.7em;
+    color: var(--secondary-color);
+    font-size: 1.37em;
 }
 
-.card-content-title-description {
+.card-content-title-description{
     text-align: left;
     font-weight: bold;
     font-size: large;
@@ -272,4 +268,294 @@ footer li {
 
 .skip-link:focus {
     top: 0;
+}
+
+/* DETAIL */
+.detail {
+  display: grid;
+  grid-gap: 1.545em;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.detail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.detail-name-address-rating {
+  display: inline-block;
+  margin:0;
+}
+
+.icon-primary {
+  color: var(--secondary-color);
+}
+
+.detail h3 {
+  font-size: 1.5em;
+  padding: 1em 0;
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0;
+  border-radius: 0.5em;
+}
+
+.detail-desc {
+  text-align: justify;
+  color: var(--secondary-color);
+  margin-bottom: 0.5em;
+  font-style: italic;
+  margin:0;
+}
+
+.category {
+  padding: 0.3em 1em;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  margin-right: 2px;
+  border: 1px solid transparent;
+  border-radius: 0px 10px 0px 10px;
+  text-align: left;
+}
+
+.detail-menu h4 {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 1em;
+  color: var(--secondary-color);
+  background-color: orange;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.detail-food {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+}
+
+.detail-food ul, .detail-drink ul{
+  color: var(--secondary-color);
+  padding-left: 0;
+}
+
+.detail-food li {
+  padding: 0.5em 0;
+  display: block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  border: 0.5px solid var(--secondary-color);
+  border-width: 0 0 0.5px;
+  font-size: 1.37em;
+}
+
+.detail-drink {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+}
+
+.detail-drink li {
+  padding: 0.5em 0;
+  display: block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  border: 0.5px solid var(--secondary-color);
+  border-width: 0 0 0.5px;
+  font-size: 1.37em;
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.detail-info h4 {
+  color: var(--secondary-color);
+  font-size: 1.5em;
+  margin: 0;
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+.detail-info li {
+  position: relative;
+  display: block;
+  padding: 0.6em;
+  color: var(--secondary-color);
+  text-decoration: none;
+  background-color: var(--primary-color);
+}
+
+.resto-name, .resto-address, .resto-rating, .resto-category{
+  font-size: 1.5em;
+  margin: 0;
+  text-align: left;
+}
+
+
+/* DETAIL REVIEW */
+.detail-review {
+  max-width: 100%;
+  font-size: 1em;
+  text-align: center;
+}
+
+.detail-review-item {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  margin-bottom: 1.5em;
+  padding: 1em 1em;
+  border: 1px solid var(--secondary-color);
+  border-radius: 2em;
+}
+
+.detail-review-item:last-child {
+  margin-bottom: 0;
+}
+
+.header-review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.name-review {
+  font-weight: bold;
+  display: flex;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.date-review {
+  font-size: 1em;
+  font-weight: lighter;
+  font-size: 1em;
+}
+
+.body-review {
+  padding: 1em;
+  text-align: left;
+  font-size: 1.37em;
+}
+
+.category:hover,
+.detail-food li:hover,
+.detail-drink li:hover,
+.detail-review-item:hover {
+  box-shadow: 0px 10px 13px -7px var(--secondary-color),
+    5px 5px 15px 5px var(--secondary-color);
+}
+
+/* FORM */
+form {
+  margin: 2em 0;
+  padding: 1.5em;
+  border: 3px solid var(--secondary-color);
+  border-radius: 15px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.738em;
+  font-size: 1.37em;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 1em;
+}
+
+.form-label{
+  display: block;
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+  text-align: left;
+  color: var(--secondary-color);
+  
+}
+
+.mb-3 {
+  margin-bottom: 1.3em;
+  margin-top: 0.5em;
+}
+
+.btn{
+  display: block;
+  width: 100px;
+  padding: 0.7em;
+  font-size: 1.37em;
+  color: var(--primary-color);
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 1em;
+}
+
+.btn:hover{
+  box-shadow: 0px 10px 13px -7px var(--secondary-color),
+    5px 5px 15px 5px var(--secondary-color);
+}
+
+/* LIKE BUTOON */
+.like {
+  font-size: 18px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 10;
+}
+
+/* LOADING */
+.loading{
+  width: 50px;
+  height: 50px;
+  border: solid 5px var(--secondary-color);
+  border-top-color: var(--primary-color);
+  border-radius: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ERROR */
+.error{
+  color: var(--secondary-color);
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
 }

@@ -50,8 +50,22 @@
     #explore-restaurant-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 1em;
-        grid-row-gap: 16px;
+        grid-column-gap: 1.5em;
+        grid-row-gap: 1.5em;
+    }
+
+    .detail-menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5em;
+        margin-top: 1em;
+    }
+
+    .container-info{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-gap: 1.5em;
+        margin-top: 1em;
     }
 }
 
