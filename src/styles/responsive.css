@@ -2,7 +2,7 @@
     .nav {
         z-index: 10;
         background-color: #143F6B;
-        width:250px;
+        width: 250px;
         position: absolute;
         top: 70px;
         left: 0;
@@ -23,6 +23,17 @@
         width: 100%;
         text-align: left;
         padding: 1.5em;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        min-height: 500px;
+        width: 100%;
+        text-align: center;
+        background-image: url("../public/images/hero-small.jpg");
+        background-size: cover;
+        object-fit: cover;
     }
 }
 
@@ -54,18 +65,28 @@
         grid-row-gap: 1.5em;
     }
 
-    .detail-menu{
+    .detail-menu {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1.5em;
         margin-top: 1em;
     }
 
-    .container-info{
+    .container-info {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
         grid-gap: 1.5em;
         margin-top: 1em;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        min-height: 500px;
+        width: 100%;
+        text-align: center;
+        background-image: url("../public/images/hero-medium.jpg");
+        background-size: cover;
     }
 }
 
@@ -73,6 +94,17 @@
     #explore-restaurant-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        min-height: 500px;
+        width: 100%;
+        text-align: center;
+        background-image: url("../public/images/hero-large.jpg");
+        background-size: cover;
+        object-fit: cover;
     }
 }
 

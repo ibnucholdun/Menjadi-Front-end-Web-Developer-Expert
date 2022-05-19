@@ -3,8 +3,9 @@ import RestaurantSource from '../../data/restaurant-source';
 import {
   createRestaurantDetailTemplate,
 } from '../templates/template-creator';
-import LikeButtonInitiatior from '../../utils/likebutton-initiator';
+import LikeButtonPresenter from '../../utils/likebutton-presenter';
 import PostReview from '../../utils/postreview-initiator';
+import FavoriteRestaurantIdb from '../../data/favoriterestaurant-db';
 
 const Detail = {
   async render() {
@@ -27,7 +28,6 @@ const Detail = {
           </form>
         </div>
       </div>
-      <div id="likeButtonContainer"></div>
     `;
   },
 
@@ -38,8 +38,9 @@ const Detail = {
     restaurantContainer.innerHTML = createRestaurantDetailTemplate(restaurant);
 
     // favorite
-    LikeButtonInitiatior.init({
+    LikeButtonPresenter.init({
       likeButtonContainer: document.getElementById('likeButtonContainer'),
+      favoriteRestaurants: FavoriteRestaurantIdb,
       restaurant: {
         id: restaurant.id,
         name: restaurant.name,
