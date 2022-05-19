@@ -7,7 +7,7 @@ class AppBar extends HTMLElement {
     this.innerHTML = `
         <header class="header">
         <a href="/">
-            <h1 class="nav_logo">IT Resto</h1>
+            <h1 class="nav_logo">IC Resto</h1>
         </a>
         <button class="menu" id="menu" aria-label="button menu dropdown on mobile">☰</button>
         <nav id="drawer" class="nav">
