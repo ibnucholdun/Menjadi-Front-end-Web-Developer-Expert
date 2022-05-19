@@ -23,10 +23,14 @@ Project aplikasi ini hanya untuk submission kelas Menjadi Front-end Web Develope
      alt="Responsive"
      style="float: center; margin-right: 10px;"
      width="400" />
-     
+
+---
+
 ## Features
 #### Submission Checklists
+
 - [x] Halaman Utama (Daftar Restoran)
+
       Syarat:
       - Menampilkan daftar restoran yang datanya bersumber dari API https://restaurant-api.dicoding.dev/. Silakan lihat dokumentasinya pada halaman tersebut.
       - Wajib menampilkan nama, gambar dan minimal salah satu diantara kota, rating, dan atau deskripsi pada restoran.
@@ -34,6 +38,7 @@ Project aplikasi ini hanya untuk submission kelas Menjadi Front-end Web Develope
       - Hero elemen tetap dipertahankan.
         
 - [x] Halaman Detail Restoran
+
       Syarat:
       - Menampilkan detail dari restoran yang dipilih dari halaman utama (daftar restoran) atau halaman favorit restoran.
       - Pada halaman detail restoran harus terdapat:
@@ -48,6 +53,7 @@ Project aplikasi ini hanya untuk submission kelas Menjadi Front-end Web Develope
       - Terdapat tombol favorite untuk memasukkan atau menghapus restoran favorit dari database (gunakan IndexedDB).
        
 - [x] Halaman Daftar Restoran Favorit
+
       Syarat:
       - Halaman Daftar Restoran dapat diakses melalui menu navigasi favorit.
       - Menampilkan restoran yang difavoritkan oleh pengguna (data diambil dari indexedDB).
@@ -55,19 +61,25 @@ Project aplikasi ini hanya untuk submission kelas Menjadi Front-end Web Develope
       - Terdapat tautan/CTA yang mengarah ke detail restoran pada tiap itemnya.
       
 - [x] Native Capability
+
       Syarat:
       - Aplikasi dapat diakses dalam keadaan offline tanpa ada aset yang gagal dimuat, termasuk data yang didapatkan dari API. Anda bebas menggunakan strategi caching apapun, bahkan menggunakan workbox.
       - Aplikasi harus menampilkan icon Add to Home Screen.
       - Aplikasi memiliki custom icon yang ditampilkan pada home screen dan splash screen.
       
 - [x] Code Quality
+
       Syarat:
       - Menggunakan ESLint sebagai linter ketika menuliskan kode JavaScript. Harap lampirkan berkas konfigurasi ESLint ya.
       - Menerapkan salah satu style guide baik itu Google JavaScript Code Style, AirBnB JavaScript Code Style, atau StandardJS Code Style.
       - Periksa kembali sebelum mengirimkan submission, apakah project yang Anda kirimkan sesuai dengan kriteria yang ditetapkan atau tidak, ditandai dengan tidak adanya satupun error ketika menjalankan eslint.
+      
 - [x] Pertahankan syarat yang ada pada submission sebelumnya. Seperti responsibilitas tampilan, aksesibilitas pada website, appbar, footer dan sebagainya.
 - [x] Menerapkan Web Component secara native menggunakan Custom Element.
 - [x] indikator loading ketika data sedang dimuat dari server dan tampilkanlah keterangan/halaman bila request yang dilakukan gagal.
+
+---
+
 ### Configure
 Get the repo
 ```cmd
@@ -79,6 +91,9 @@ Script
 - `npm run start-dev` - to start locally
 - `npm run build` - to build into folder dist
 - `npm run lint` - linting
+
+---
+
 ## Built With
 - [Webpack](https://webpack.js.org/)
 - [PWA](https://developers.google.com/web/progressive-web-apps)
