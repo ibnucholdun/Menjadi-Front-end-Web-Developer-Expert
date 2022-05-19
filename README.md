@@ -83,4 +83,4 @@ Script
 
 
 ## Author
-* #### [Ibnu Choldun](Menjadi Front-end Web Developer Expert)
+* #### [Ibnu Choldun](https://www.linkedin.com/in/ibnu-choldun-19904322a/)
