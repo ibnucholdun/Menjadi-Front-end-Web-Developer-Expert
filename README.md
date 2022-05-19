@@ -1,10 +1,11 @@
-# Dicoding - Submission Menjadi Front-end Web Developer Expert (Submission 2 Katalog Restaurant + PWA)
+
+# Dicoding - Submission Menjadi Front-end Web Developer Expert (Submission Final Katalog Restaurant)
 
 # Read This
 Project aplikasi ini hanya untuk submission kelas Menjadi Front-end Web Developer Expert Dicoding, segala bentuk plagiarisme akan otomatis terdeteksi jika menggunakan project aplikasi ini untuk submission. Diharapkan project ini digunakan sebagai referensi belajar dan bukan untuk copy-paste project submission!!!
      
 # Screenshot
-<img src="https://user-images.githubusercontent.com/96803344/169085569-759ba8ff-c3f1-4eba-8b44-6f481061a25a.PNG"
+<img src="https://user-images.githubusercontent.com/96803344/169204793-c03d519b-23b5-4dc3-b6cf-f6a274558ccd.PNG"
      style="float: center; margin-right: 10px;"
      width="900" />
 <img src="https://user-images.githubusercontent.com/96803344/169202535-745dfca1-8f3d-4d88-89bd-2f22bfae09e5.PNG"

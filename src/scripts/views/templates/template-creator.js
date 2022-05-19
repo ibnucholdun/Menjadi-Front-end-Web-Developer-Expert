@@ -1,9 +1,9 @@
 import CONFIG from '../../globals/config';
 
 const createRestaurantItemTemplate = (restaurant) => `
-<article tabindex="0" class="card">
+        <article tabindex="0" class="card">
             <div class="card-img-container">
-                <img class="card-image" alt="${restaurant.name}" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"/>
+                  <img class="card-image lazyload" data-src="${CONFIG.BASE_IMAGE_SMALL_URL + restaurant.pictureId}" alt="${restaurant.name}"/>
                 <span class="card-rating">
                     <i title="ratings" class="fa fa-star"></i>
                     <span>${restaurant.rating}</span>
@@ -17,12 +17,38 @@ const createRestaurantItemTemplate = (restaurant) => `
             </div>
         </article>
 `;
+const createSkeletonRestaurantTemplate = (count) => {
+  let skeleton = '';
 
+  for (let i = 0; i < count; i += 1) {
+    skeleton += `
+          <article tabindex="0" class="card">
+          <div class="card-img-container">
+              <img class="card-image" alt="skeleton" src="./images/placeholder-medium.jpg" width="100%" height="250px"/>
+          </div>
+
+          <div class="card-content">
+              <p class="skeleton">Lorem ipsum dolor sit.</p>
+              <p class="skeleton">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias aspernatur, assumenda aut consectetur consequuntur debitis deleniti dicta dolorem dolorum eos exercitationem labore laboriosam magni nihil, nobis obcaecati optio perspiciatis placeat qui recusandae saepe sapiente sequi totam ullam ut.</p>
+          </div>
+      </article>
+    `;
+  }
+  return skeleton;
+};
 const createRestaurantDetailTemplate = (restaurant) => `
 <div class="detail">
 <div tabindex="0" class="container-info">
 <div class="img-container">
-    <img class="detail-img" alt="${restaurant.name}" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"/>
+<picture>
+<source class="detail-img lazyload" srcset="${CONFIG.BASE_IMAGE_SMALL_URL + restaurant.pictureId}" type="image/webp" media="all and (max-width: 300px)" />        
+<source class="detail-img lazyload" srcset="${CONFIG.BASE_IMAGE_SMALL_URL + restaurant.pictureId}" type="image/jpeg" media="all and (max-width: 300px)" />
+<source class="detail-img lazyload" srcset="${CONFIG.BASE_IMAGE_MEDIUM_URL + restaurant.pictureId}" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
+<source class="detail-img lazyload" srcset="${CONFIG.BASE_IMAGE_MEDIUM_URL + restaurant.pictureId}" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
+<source class="detail-img lazyload" srcset="${CONFIG.BASE_IMAGE_LARGE_URL + restaurant.pictureId}" type="image/webp" media="all and (min-width: 901px)" />        
+<source class="detail-img lazyload" srcset="${CONFIG.BASE_IMAGE_LARGE_URL + restaurant.pictureId}" type="image/jpeg" media="all and (min-width: 901px)" />
+<img class="detail-img lazyload" data-src="${CONFIG.BASE_IMAGE_MEDIUM_URL + restaurant.pictureId}" alt="${restaurant.name}"/>
+</picture>
 </div>
 
 <ul class="detail-info">
@@ -107,26 +133,22 @@ ${restaurant.customerReviews
 </div>
 `;
 
-const createLikeButtonTemplate = () => `
+const createLikeRestaurantButtonTemplate = () => `
 <button aria-label="like this restaurant" id="likeButton" class="like">
 <i class="fa fa-heart-o" aria-hidden="true"></i>
 </button>
 `;
 
-const createLikedButtonTemplate = () => `
+const createUnlikeRestaurantButtonTemplate = () => `
 <button aria-label="unlike this restaurant" id="likeButton" class="like">
 <i class="fa fa-heart" aria-hidden="true"></i>
 </button>
 `;
 
-const loading = () => `
-<div class="loading"></div>
-`;
-
 export {
   createRestaurantItemTemplate,
   createRestaurantDetailTemplate,
-  createLikeButtonTemplate,
-  createLikedButtonTemplate,
-  loading,
+  createLikeRestaurantButtonTemplate,
+  createUnlikeRestaurantButtonTemplate,
+  createSkeletonRestaurantTemplate,
 };
