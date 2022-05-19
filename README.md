@@ -1,64 +1,65 @@
-# Dicoding - Submission Menjadi Front-end Web Developer Expert (Submission Final Katalog Restaurant)
+# Dicoding - Submission Menjadi Front-end Web Developer Expert (Submission 3 Katalog Restaurant PWA + testing and Optimized)
 
 # Read This
 Project aplikasi ini hanya untuk submission kelas Menjadi Front-end Web Developer Expert Dicoding, segala bentuk plagiarisme akan otomatis terdeteksi jika menggunakan project aplikasi ini untuk submission. Diharapkan project ini digunakan sebagai referensi belajar dan bukan untuk copy-paste project submission!!!
      
 # Screenshot
-<img src="https://user-images.githubusercontent.com/96803344/169204793-c03d519b-23b5-4dc3-b6cf-f6a274558ccd.PNG"
+<img src="https://user-images.githubusercontent.com/96803344/169085569-759ba8ff-c3f1-4eba-8b44-6f481061a25a.PNG"
      style="float: center; margin-right: 10px;"
      width="900" />
-<img src="https://user-images.githubusercontent.com/96803344/169085711-77d48e91-117a-4730-9bfc-ff936922f8bb.PNG"
+<img src="https://user-images.githubusercontent.com/96803344/169202535-745dfca1-8f3d-4d88-89bd-2f22bfae09e5.PNG"
+     alt="Home"
      style="float: center; margin-right: 10px;"
      width="900" />
+<img src="https://user-images.githubusercontent.com/96803344/169202563-e5e5c80b-d290-46ae-b02c-e6dc00b5ac86.PNG"
+     alt="Detail Restaurant"
+     style="float: center; margin-right: 10px;"
+     width="900" />
+<img src="https://user-images.githubusercontent.com/96803344/169202572-d6df19de-cb51-46a0-a89b-e9bd7846060a.PNG"
+     alt="Favorite"
+     style="float: center; margin-right: 10px;"
+     width="900" />
+<img src="https://user-images.githubusercontent.com/96803344/169232412-54bf10ae-98a5-4717-8cf0-b91d494238e2.PNG"
+     alt="LightHouse"
+     style="float: center; margin-right: 10px;"
+     width="900" />     
+<img src="https://user-images.githubusercontent.com/96803344/169202584-98df7c81-1ba8-4c01-aa28-f2f900347263.PNG"
+     alt="Responsive"
+     style="float: center; margin-right: 10px;"
+     width="400" />
+
+---
 
 ## Features
 #### Submission Checklists
-- [x] App Bar (Navigation Bar)
+- [x] Integration Test
 
       Syarat:
-      - Menampilkan nama aplikasi atau brand logo dari aplikasi katalog restoran (tentukan sendiri nama aplikasi atau brand logonya).
-      - Terdapat navigation menu:
-        - Home → mengarah ke root domain.
-        - Favorite → target URL cukup bernilai “#” (Sebagai placeholder untuk digunakan pada submission selanjutnya).
-        - About Us → arahkan ke profil LinkedIn/Github/Social Media Anda, atau boleh juga ke personal web/blog.
-        - Terdapat fitur navigation drawer yang berfungsi dengan baik bila diakses pada layar seluler.
+      - Menerapkan integration test untuk fungsi menyukai dan batal menyukai restoran.
         
-- [x] Hero Element (Jumbotron Element)
+- [x] End to End Test
 
       Syarat:
-      - Menampilkan hero element dengan gambar yang sudah ditentukan, silakan pilih salah satu aset yang disediakan di dalam starter proyek, src → public → images → hero. Gambar yang tidak digunakan, bisa Anda hapus.
-      - Gambar hero element yang ditampilkan haruslah full-width atau memenuhi persyaratan sebagai berikut: 
-         - Tampilkanlah minimal width 1000px pada  viewport width >= 1200px.
-         - Jika ukuran viewport width < 1200px, maka hero element ditampilkan full-width.
+      - Menerapkan End to End Test dengan skenario:
+        - Menyukai salah satu restoran.
+        - Batal menyukai restoran tersebut.
        
-- [x] Daftar Restoran
+- [x] Image Optimization
 
       Syarat:
-      - Menampilkan daftar restoran berdasarkan data yang sudah disediakan di dalam project starter (src → DATA.json), untuk menampilkannya boleh melalui cara hardcoded di berkas HTML, atau menggunakan DOM manipulation menggunakan JavaScript.
-      - Wajib menampilkan nama, gambar dan minimal salah satu diantara kota, rating, dan atau deskripsi pada restoran.
+      - Melakukan kompresi terhadap gambar hero yang digunakan. Ukuran gambar harus di bawah 200kb.
+      - Menerapkan teknik image responsive pada gambar hero. Resolusi gambar pada layar seluler dan desktop harus berbeda.
+      - Menerapkan teknik lazy loading pada gambar daftar restoran yang ditampilkan.
       
-- [x] Footer
+- [x] Bundle Optimization
 
       Syarat:
-      - Terdapat footer yang ditampilkan di bawah halaman.
-      - Terdapat konten teks bebas sesuai dengan kreatifitas Anda. Misalnya, konten copyright yang mencangkup tahun dan nama aplikasi. Contoh: “Copyright © 2020 - Hunger Apps”.
-      
-- [x] Responsibilitas Tampilan
+      - Memasang bundle analyzer pada proyek submission.
+      - Gunakan teknik Code Splitting untuk memisahkan vendor code dari kode asli yang Anda tuliskan.
 
-      Syarat:
-      - Tampilan web app harus responsif pada seluruh ukuran layar (mobile - tablet - desktop). Utamakan tampilan mobile terlebih dahulu.
-      - Gunakan teknik Grid CSS atau Flexbox dalam menyusun layout. Bila terdapat float, submission akan ditolak.
-      - Menetapkan ukuran viewport secara dinamis berdasarkan layar device yang digunakan.
+- [x] Pertahankan syarat yang ada pada submission sebelumnya. Seperti penerapan PWA, responsibilitas tampilan,  aksesibilitas pada website dan sebagainya.
 
-- [x] Aksesibilitas Website
-
-      Syarat:
-      - Seluruh fungsionalitas website dapat dilakukan dengan menggunakan keyboard. Contohnya mengakses tombol hamburger button, mengakses tautan yang ada.
-      - Menerapkan teknik skip to content untuk melewati focus pada menu navigasi.
-      - Terdapat alternative teks pada seluruh gambar yang ditampilkan. Bila hanya gambar tidak memiliki arti apapun, cukup berikan atribut alt dengan nilai kosong. 
-      - Dimensi touch target pada elemen yang diinteraksikan dengan touch harus memilliki ukuran minimal 44x44px. Adapun beberapa contoh elemen tersebut ialah button, anchor, input text, dan textarea.
-      - Pastikan juga terdapat jarak antar elemen tersebut supaya dimensi touch target tidak menumpuk.
-      - Menggunakan semantic element dalam menyusun struktur dan landmarking HTML.
+---
 
 ### Configure
 
@@ -74,12 +75,41 @@ Script
 
 - `npm run start-dev` - to start locally
 - `npm run build` - to build into folder dist
+- `npm run bundle-report` - to analyze webpack bundle
+- `npm run lint` - linting
+
+Testing
+- `npm run test`- to start integration testing with karma or jasmine
+- `npm run e2e` - to start end to end testing with codecept.js
+
+---
 
 ## Built With
 - [Webpack](https://webpack.js.org/)
+- [PWA](https://developers.google.com/web/progressive-web-apps)
+- [IndexedDB](https://developers.google.com/web/ilt/pwa/working-with-indexeddb)
 - [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/)
 - [JS](https://www.javascript.com/)
+- API => https://restaurant-api.dicoding.dev/
+
+### Testing
+
+- Integration Testing :
+  - [Jasmine](https://jasmine.github.io/)
+  - [Karma](https://karma-runner.github.io)
+- End to End Testing (E2E) :
+  - [Codecept](https://codecept.io/)
+  - [Puppeteer](https://codecept.io/helpers/Puppeteer/#seeinsource)
+
+## Tools
+- [Eslint](https://eslint.org/)
+- [imagemin](https://github.com/imagemin/imagemin)
+- [sharp](https://sharp.pixelplumbing.com/)
+- [lazysizes](https://www.npmjs.com/package/lazysizes)
+
+### Code Convention
+[AirBnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
 
 ## Author
