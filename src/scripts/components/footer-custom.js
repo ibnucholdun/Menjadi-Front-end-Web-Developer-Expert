@@ -7,7 +7,7 @@ class FooterCustom extends HTMLElement {
     this.innerHTML = `
         <footer tabindex="0">
         <ul>
-            <li><span>Copyright © 2022 - IT Resto</span></li>
+            <li><span>Copyright © 2022 - IC Resto</span></li>
             <li><span>handcrafted with <i title="love" class="fa fa-heart"></i> by Ibnu Choldun</span></li>
         </ul>
     </footer>
